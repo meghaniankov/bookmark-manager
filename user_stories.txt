@@ -1,0 +1,36 @@
+As a user,
+So I can see all of my bookmarks,
+I want to view a list of bookmarks.
+
+As a user,
+So I can add multiple bookmarks,
+I want to add a new bookmark
+
+As a user,
+So I can keep only the bookmarks I need,
+I want to delete a bookmark.
+
+As a user,
+So I can keep bookmarks relevant,
+I want to be able to update a bookmark.
+
+As a user,
+So I can keep notes about my bookmarks,
+I want to add a comment to a bookmark.
+
+As a user,
+So I can stay organized,
+I want to add a tag to my bookmark.
+
+As a user,
+So I can retrieve relevant information,
+I want to filter bookmarks by tag.
+
+As the systems manager,
+So I maintain security,
+I want to restrict users to manage only their own bookmarks.
+
+---
+As a user,
+So I can view all of my bookmarks,
+I want to sign in to my bookmark manager.
