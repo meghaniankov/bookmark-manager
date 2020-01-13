@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/meghanmccue/projects/bookmark-manager/app.rb": [
+      "/Users/student/Desktop/Week-Challenges/bookmark-manager/app.rb": [
         1,
         1,
         null,
@@ -15,29 +15,32 @@
         1,
         1,
         null,
+        null,
+        1,
         null
       ],
-      "/Users/meghanmccue/projects/bookmark-manager/lib/bookmark_list.rb": [
+      "/Users/student/Desktop/Week-Challenges/bookmark-manager/lib/bookmark_list.rb": [
+        1,
+        null,
         1,
         1,
         2,
+        2,
+        8,
         null,
-        null,
+        null
+      ],
+      "/Users/student/Desktop/Week-Challenges/bookmark-manager/spec/bookmarks_list_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
         null
       ],
-      "/Users/meghanmccue/projects/bookmark-manager/spec/bookmarks_list_spec.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/meghanmccue/projects/bookmark-manager/spec/features/homepage_spec.rb": [
+      "/Users/student/Desktop/Week-Challenges/bookmark-manager/spec/features/homepage_spec.rb": [
         1,
         1,
         1,
@@ -45,7 +48,9 @@
         null,
         null
       ],
-      "/Users/meghanmccue/projects/bookmark-manager/spec/features/view_bookmarks_spec.rb": [
+      "/Users/student/Desktop/Week-Challenges/bookmark-manager/spec/features/view_bookmarks_spec.rb": [
+        1,
+        1,
         1,
         1,
         1,
@@ -55,6 +60,6 @@
         null
       ]
     },
-    "timestamp": 1578927212
+    "timestamp": 1578954317
   }
 }
