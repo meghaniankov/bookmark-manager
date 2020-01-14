@@ -20,7 +20,7 @@ class BookmarkList
     end
 
     length = BookmarkList.all.count
-    connection.exec("INSERT INTO bookmarks VALUES(#{length + 1}, '#{bookmark}');")
+    connection.exec("INSERT INTO bookmarks (url) VALUES('#{bookmark}');")
   end
 
 end
