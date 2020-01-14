@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-01-14T17:45:59+00:00">2020-01-14T17:45:59+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-01-14T18:12:04+00:00">2020-01-14T18:12:04+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.92
+         2.23
        </span>
     </span> hits/line)
   </h2>
@@ -67,7 +67,7 @@
         <td>14</td>
         <td>12</td>
         <td>2</td>
-        <td>4.9</td>
+        <td>6.3</td>
       </tr>
       
       <tr>
@@ -103,7 +103,7 @@
       <tr>
         <td class="strong"><a href="#2f377263bd3abcb4ad178efe7f04b665a893b147" class="src_link" title="spec/features/view_bookmarks_spec.rb">spec/features/view_bookmarks_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>11</td>
+        <td>9</td>
         <td>7</td>
         <td>7</td>
         <td>0</td>
@@ -313,14 +313,14 @@
           <code class="ruby">  def self.all</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="5">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="10" data-linenumber="5">
+          <span class="hits">10</span>
           
           <code class="ruby">    if ENV[&#39;DATABASE&#39;] == &#39;test&#39;</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="6">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="10" data-linenumber="6">
+          <span class="hits">10</span>
           
           <code class="ruby">      connection = PG.connect(dbname: &#39;bookmark_manager_test&#39;)</code>
         </li>
@@ -349,14 +349,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="11">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="10" data-linenumber="11">
+          <span class="hits">10</span>
           
           <code class="ruby">    result = connection.exec(&quot;SELECT * FROM bookmarks;&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="28" data-linenumber="12">
-          <span class="hits">28</span>
+        <li class="covered" data-hits="34" data-linenumber="12">
+          <span class="hits">34</span>
           
           <code class="ruby">    result.map { |bookmark| bookmark[&#39;url&#39;] }</code>
         </li>
@@ -379,14 +379,14 @@
           <code class="ruby">  def self.create(bookmark)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="16">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="16">
+          <span class="hits">5</span>
           
           <code class="ruby">    if ENV[&#39;DATABASE&#39;] == &#39;test&#39;</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="17">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="17">
+          <span class="hits">5</span>
           
           <code class="ruby">      connection = PG.connect(dbname: &#39;bookmark_manager_test&#39;)</code>
         </li>
@@ -415,14 +415,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="22">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="22">
+          <span class="hits">5</span>
           
           <code class="ruby">    length = BookmarkList.all.count</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="23">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="23">
+          <span class="hits">5</span>
           
           <code class="ruby">    connection.exec(&quot;INSERT INTO bookmarks VALUES(#{length + 1}, &#39;#{bookmark}&#39;);&quot;)</code>
         </li>
@@ -491,7 +491,7 @@
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">      connection.exec(&quot;INSERT INTO bookmarks (url) VALUES (&#39;http://www.makersacademy.com&#39;);&quot;)</code>
+          <code class="ruby">      BookmarkList.create(&#39;http://www.makersacademy.com&#39;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="6">
@@ -794,7 +794,7 @@
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">    connection.exec(&quot;INSERT INTO bookmarks (url) VALUES (&#39;http://www.makersacademy.com&#39;);&quot;)</code>
+          <code class="ruby">    BookmarkList.create(&#39;http://www.makersacademy.com&#39;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="7">
@@ -806,22 +806,10 @@
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby">    #expect(page).to have_content &quot;http://destroyallsoftware.com&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby">    #expect(page).to have_content &quot;http://www.google.com&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
-          
-          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">end</code>
