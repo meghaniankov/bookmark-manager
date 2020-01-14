@@ -1,7 +1,16 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/meghanmccue/projects/bookmark-manager/app.rb": [
+      "/Users/macbook/bookmark-manager/spec/setup_test_database.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/macbook/bookmark-manager/app.rb": [
         1,
         1,
         null,
@@ -18,18 +27,25 @@
         1,
         null
       ],
-      "/Users/meghanmccue/projects/bookmark-manager/lib/bookmark_list.rb": [
+      "/Users/macbook/bookmark-manager/lib/bookmark_list.rb": [
         1,
         null,
         1,
         1,
         2,
         2,
-        8,
+        null,
+        0,
+        null,
+        null,
+        2,
+        4,
         null,
         null
       ],
-      "/Users/meghanmccue/projects/bookmark-manager/spec/bookmarks_list_spec.rb": [
+      "/Users/macbook/bookmark-manager/spec/bookmarks_list_spec.rb": [
+        1,
+        1,
         1,
         1,
         1,
@@ -39,7 +55,7 @@
         null,
         null
       ],
-      "/Users/meghanmccue/projects/bookmark-manager/spec/features/homepage_spec.rb": [
+      "/Users/macbook/bookmark-manager/spec/features/homepage_spec.rb": [
         1,
         1,
         1,
@@ -47,7 +63,7 @@
         null,
         null
       ],
-      "/Users/meghanmccue/projects/bookmark-manager/spec/features/view_bookmarks_spec.rb": [
+      "/Users/macbook/bookmark-manager/spec/features/view_bookmarks_spec.rb": [
         1,
         1,
         1,
@@ -55,10 +71,12 @@
         1,
         1,
         1,
+        null,
+        null,
         null,
         null
       ]
     },
-    "timestamp": 1579007396
+    "timestamp": 1579019454
   }
 }
