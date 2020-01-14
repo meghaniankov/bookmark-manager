@@ -11,4 +11,16 @@ class BookmarkList
     result = connection.exec("SELECT * FROM bookmarks;")
     result.map { |bookmark| bookmark['url'] }
   end
+
+  def self.create(bookmark)
+    if ENV['DATABASE'] == 'test'
+      connection = PG.connect(dbname: 'bookmark_manager_test')
+    else 
+      connection = PG.connect(dbname: 'bookmark_manager')
+    end
+
+    length = BookmarkList.all.count
+    connection.exec("INSERT INTO bookmarks VALUES(#{length + 1}, '#{bookmark}');")
+  end
+
 end
