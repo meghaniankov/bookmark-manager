@@ -9,19 +9,17 @@ describe 'BookmarksList' do
   end
 
   describe '.create(bookmark)' do
-    it 'adds new bookmark to bookmark.all' do
+    it 'checks url of added bookmark' do
       connection = PG.connect(dbname: 'bookmark_manager_test')
-      Bookmark.create('http://dogs.com', 'Dogs')
-      bookmarks = Bookmark.all
-      expect(bookmarks.last.url).to include('http://dogs.com')
-    end
-
-    it 'adds new bookmark to bookmark.all' do
-      connection = PG.connect(dbname: 'bookmark_manager_test')
-      Bookmark.create('http://bunnies.com', 'Bunnies')
-      bookmarks = Bookmark.all
-      expect(bookmarks.last.title).to include('Bunnies')
+      bookmark = Bookmark.create('http://dogs.com', 'Dogs')
+      expect(bookmark.first['url']).to include('http://dogs.com')
     end
   end
+    it 'check title of added bookmark' do
+      connection = PG.connect(dbname: 'bookmark_manager_test')
+      bookmark = Bookmark.create('http://bunnies.com', 'Bunnies')
+      expect(bookmark.first['title']).to include('Bunnies')
+    end
+  
 
 end
