@@ -1,10 +1,10 @@
 $ psql postgres
 $ postgres=# CREATE DATABASE "bookmark_manager";
 $ postgres=# \c bookmark_manager;
-$ bookmark_manager=# CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));
+$ bookmark_manager=# CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60), title VARCHAR(60));
 $ bookmark_manager=# \dt
 
 $ postgres=# CREATE DATABASE "bookmark_manager_test";
 $ postgres=# \c bookmark_manager_test;
-$ bookmark_manager=# CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));
+$ bookmark_manager=# CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60), title VARCHAR(60));
 $ bookmark_manager=# \dt
